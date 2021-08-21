@@ -1,3 +1,5 @@
+const { xit } = require("mocha");
+
 const tutorials = [
   'what does the this keyword mean?',
   'What is the Constructor OO pattern?',
@@ -11,6 +13,18 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
-}
+const titleCased = tutorials.map( str => {
+   const newString =  str.split(" ") + str[0].toUpperCase()
+    return newString;
+ })
+ 
+ titleCased;
+ 
+
+
+// const titleCased = tutorials.map( str => {
+//   const newString = str.split(" ")
+//   
+// })
+// 
+// console.log(titleCased);
